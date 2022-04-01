@@ -1,0 +1,12 @@
+version: "3.9"  
+services:
+  webminer:
+    container_name: webminer
+    build:
+      context: .
+      dockerfile: MinerDockerfile
+    volumes:
+      - .:/code
+      - ./log:/var/opt/webminer/bazel-bin/webcash.log
+
+
