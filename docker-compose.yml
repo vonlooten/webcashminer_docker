@@ -5,7 +5,3 @@ services:
     build:
       context: .
       dockerfile: MinerDockerfile
-    volumes:
-      - ./log/webcash.log:/var/opt/webminer/bazel-bin/webcash.log
-
-
