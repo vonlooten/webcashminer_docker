@@ -5,3 +5,5 @@ services:
     build:
       context: .
       dockerfile: MinerDockerfile
+    volumes:
+      - ./webcash.log:/var/opt/webcash/webminer/webcash.log
