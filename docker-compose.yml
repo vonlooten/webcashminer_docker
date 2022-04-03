@@ -2,6 +2,7 @@ version: "3.9"
 services:
   webminer:
     container_name: webminer
+    restart: unless-stopped
     build:
       context: .
       dockerfile: MinerDockerfile
