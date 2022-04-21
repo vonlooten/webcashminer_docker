@@ -18,7 +18,7 @@ RUN echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.
 
 RUN apt update && apt -y install bazel
 
-RUN apt update && apt full-upgrade
+RUN apt update && apt -y full-upgrade 
 
 RUN bazel build -c opt webminer
 
